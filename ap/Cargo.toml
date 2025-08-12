@@ -1,0 +1,42 @@
+[package]
+name = "production_grade"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+actix-cors = "0.7.1"
+actix-web = "4.11.0"
+dotenv = "0.15.0"
+env_logger = "0.11.8"
+heed = "0.22.0"
+actix-session = { version = "0.10.1", features = ["cookie-session"] }
+chrono = { version = "0.4.41", features = ["serde"] }
+derive_more = "2.0.1"
+dotenvy = "0.15.0"
+fake = { version = "4.3.0", features = ["derive", "chrono", "uuid", "geo", "url", "time", "email_address"] }
+lazy_static = "1.4.0"
+rand = "0.9.1"
+reqwest = { version = "0.12.20", features = ["json"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.45.1", features = ["macros", "time", "rt-multi-thread", "fs"] }
+utoipa = { version = "5.3.1", features = ["actix_extras", "debug", "chrono", "uuid", "url", "openapi_extensions"] }
+utoipa-scalar = { version = "0.3.0", features = ["actix-web"] }
+uuid = { version = "1.17.0", features = ["serde", "v4"] }
+heed-traits = "0.20.0"
+anyhow = "1.0.98"
+metrics = "0.24.2"
+tracing = "0.1.41"
+thiserror = "2.0.12"
+tempfile = "3.20.0"
+log = "0.4.27"
+utoipa-swagger-ui = { version = "9.0.2", features = ["actix-web"]}
+secrecy = { version = "0.10.3", features = ["serde"] }
+validator = "0.20.0"
+regex = "1.11.1"
+yup-oauth2 = "12.1.0"
+sheets = "0.7.0"
+google-sheets4 = "6.0.0"
+jsonwebtoken = "9.3.1"
+
